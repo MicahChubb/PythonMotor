@@ -6,12 +6,12 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 
 # We need 3 pins per motor just like in Arduino, In pins control direction, En pins control speed
-in1 = 23
+in1 = 23 #This could be 22 ?
 in2 = 24
 in3 = 20
 in4 = 21
-ena = 25
-enb = 26
+ena = 25 #This is not, should change to 23 or 24
+enb = 26 #This is PWM
 
 # Motor 1
 GPIO.setup(in1, GPIO.OUT)
